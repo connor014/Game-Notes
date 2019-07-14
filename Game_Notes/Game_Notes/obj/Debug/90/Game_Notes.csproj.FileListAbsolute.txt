@@ -278,3 +278,7 @@ C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\
 C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
+C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\android\assets\System.Runtime.dll
+C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\res\layout\add.xml
+C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\android\src\md586044c7be5ccb9e852510e82143ca545\addActivity.java

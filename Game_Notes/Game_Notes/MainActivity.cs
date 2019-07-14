@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Content;
 
 namespace Game_Notes
 {
@@ -15,6 +16,17 @@ namespace Game_Notes
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            //me
+
+            // button
+            Button buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
+
+            buttonAddNote.Click += delegate {
+
+                var name = new Intent(this, typeof(addActivity));
+                StartActivity(name);
+            };
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
