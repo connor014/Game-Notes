@@ -21,6 +21,20 @@ namespace Game_Notes
 
             // Create your application here
             SetContentView(Resource.Layout.add);
+
+
+            //sends to second activity.
+            var editNoteTitle = FindViewById<EditText>(Resource.Id.editTextHeading);
+            var editNoteContent = FindViewById<EditText>(Resource.Id.editTextNote);
+            var addNoteButton = FindViewById<Button>(Resource.Id.buttonSave);
+
+            addNoteButton.Click += (s, e) =>
+            {
+                Intent next = new Intent(this, typeof(note));
+                next.PutExtra("Title", editNoteTitle.Text);
+                next.PutExtra("Content", editNoteContent.Text);
+                StartActivity(next);
+            };
         }
     }
 }

@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="addActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="note.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\add.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\note.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

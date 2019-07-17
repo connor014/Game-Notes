@@ -19,12 +19,13 @@ namespace Game_Notes
 
             //me
 
-            // button
-            Button buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
+            // sends to first activity.
+            // when button "+" is clicked it takes users to the create note activity.
+            var buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
 
             buttonAddNote.Click += delegate {
 
-                var name = new Intent(this, typeof(addActivity));
+                Intent name = new Intent(this, typeof(addActivity));
                 StartActivity(name);
             };
         }

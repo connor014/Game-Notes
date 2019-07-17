@@ -3303,8 +3303,14 @@ namespace Game_Notes
 			// aapt resource value: 0x7F010002
 			public const int buttonAdd = 2130771970;
 			
+			// aapt resource value: 0x7F010008
+			public const int buttonHome = 2130771976;
+			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
+			
+			// aapt resource value: 0x7F010005
+			public const int buttonSave = 2130771973;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int center = 2131492891;
@@ -3353,6 +3359,12 @@ namespace Game_Notes
 			
 			// aapt resource value: 0x7F0C002A
 			public const int design_navigation_view = 2131492906;
+			
+			// aapt resource value: 0x7F010003
+			public const int editTextHeading = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int editTextNote = 2130771972;
 			
 			// aapt resource value: 0x7F0C002B
 			public const int edit_query = 2131492907;
@@ -3626,6 +3638,12 @@ namespace Game_Notes
 			
 			// aapt resource value: 0x7F0C0082
 			public const int textSpacerNoTitle = 2131492994;
+			
+			// aapt resource value: 0x7F010006
+			public const int textViewHeading = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int textViewNote = 2130771975;
 			
 			// aapt resource value: 0x7F0C0083
 			public const int text_input_password_toggle = 2131492995;
@@ -3923,6 +3941,9 @@ namespace Game_Notes
 			
 			// aapt resource value: 0x7F0F002C
 			public const int mtrl_layout_snackbar_include = 2131689516;
+			
+			// aapt resource value: 0x7F020004
+			public const int note = 2130837508;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
