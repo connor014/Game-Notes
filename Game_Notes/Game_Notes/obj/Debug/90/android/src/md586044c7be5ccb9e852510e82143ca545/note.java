@@ -2,7 +2,7 @@ package md586044c7be5ccb9e852510e82143ca545;
 
 
 public class note
-	extends android.app.Activity
+	extends android.app.ListActivity
 	implements
 		mono.android.IGCUserPeer
 {

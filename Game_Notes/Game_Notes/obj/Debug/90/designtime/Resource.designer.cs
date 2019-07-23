@@ -3300,6 +3300,9 @@ namespace Game_Notes
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
 			
+			// aapt resource value: 0x7F010005
+			public const int button1 = 2130771973;
+			
 			// aapt resource value: 0x7F010002
 			public const int buttonAdd = 2130771970;
 			
@@ -3309,8 +3312,8 @@ namespace Game_Notes
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
 			
-			// aapt resource value: 0x7F010005
-			public const int buttonSave = 2130771973;
+			// aapt resource value: 0x7F010004
+			public const int buttonSave = 2130771972;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int center = 2131492891;
@@ -3362,9 +3365,6 @@ namespace Game_Notes
 			
 			// aapt resource value: 0x7F010003
 			public const int editTextHeading = 2130771971;
-			
-			// aapt resource value: 0x7F010004
-			public const int editTextNote = 2130771972;
 			
 			// aapt resource value: 0x7F0C002B
 			public const int edit_query = 2131492907;
@@ -3434,6 +3434,9 @@ namespace Game_Notes
 			
 			// aapt resource value: 0x7F0C0041
 			public const int listMode = 2131492929;
+			
+			// aapt resource value: 0x7F010009
+			public const int listView1 = 2130771977;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int list_item = 2131492930;

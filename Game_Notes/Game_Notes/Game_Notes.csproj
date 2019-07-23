@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="addActivity.cs" />
+    <Compile Include="list.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="note.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

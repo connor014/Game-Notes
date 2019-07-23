@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Widget;
 using Android.Content;
 
+
 namespace Game_Notes
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -17,9 +18,6 @@ namespace Game_Notes
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            //me
-
-            // sends to first activity.
             // when button "+" is clicked it takes users to the create note activity.
             var buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
 

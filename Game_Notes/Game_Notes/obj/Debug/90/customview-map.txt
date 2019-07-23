@@ -18,6 +18,8 @@ LinearLayout;obj\Debug\90\res\layout\activity_main.xml
 LinearLayout;obj\Debug\90\res\layout\add.xml
 LinearLayout;obj\Debug\90\res\layout\note.xml
 LinearLayout;obj\Debug\90\res\note.xml
+ListView;obj\Debug\90\res\layout\activity_main.xml
+ListView;obj\Debug\90\res\layout\note.xml
 paths;C:\Users\conno\OneDrive\Documents\Deakin\Year4Tri2\sit313\Game-Notes\Game_Notes\Game_Notes\obj\Debug\90\lp\36\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj\Debug\90\res\layout\activity_main.xml
 resources;obj\Debug\90\res\values\colors.xml

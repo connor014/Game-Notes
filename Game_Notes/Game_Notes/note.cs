@@ -13,28 +13,17 @@ using Android.Widget;
 namespace Game_Notes
 {
     [Activity(Label = "note")]
-    public class note : Activity
+    public class note : ListActivity 
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        //
+        string[] items;
+        protected override void OnCreate(Bundle bundle) 
         {
-            base.OnCreate(savedInstanceState);
-
-            // Create your application here
-            SetContentView(Resource.Layout.note);
-
-            string title = Intent.GetStringExtra("Title" ?? "Not Recieved");
-            string content = Intent.GetStringExtra("Content" ?? "Not Recieved");
-
-            var titleName = FindViewById<TextView>(Resource.Id.textViewHeading);
-            var titleContent = FindViewById<TextView>(Resource.Id.textViewNote);
-            var titleButton = FindViewById<Button>(Resource.Id.buttonHome);
-
-            titleName.Text = title;
-            titleContent.Text = content;
-            titleButton.Click += delegate
-            {
-                this.Finish();
-            };
+            base.OnCreate(bundle);
+            items = new string[] { "Vegetables", "Fruits", "Flower Buds", "Legumes", "Bulbs", "Tubers" };
+            ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, items);
         }
+        //protected override void OnListItemClick(ListView l, View v, int position, long id);
     }
+
 }
