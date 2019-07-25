@@ -18,7 +18,7 @@ namespace Game_Notes
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            // when button "+" is clicked it takes users to the create note activity.
+            // when button "add note" is clicked it takes users to the create note activity.
             var buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
 
             buttonAddNote.Click += delegate {

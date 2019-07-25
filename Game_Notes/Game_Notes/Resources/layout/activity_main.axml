@@ -6,9 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#d3d3d3">
+    android:background="@drawable/clean">
+    <ImageView
+        android:src="@drawable/icon"
+        android:layout_width="match_parent"
+        android:layout_height="378.5dp"
+        android:id="@+id/imageView1" />
     <Button
-        android:text="+"
+        android:text="Create New Notes"
+        android:background="@color/mtrl_btn_transparent_bg_color"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:textColor="@android:color/holo_blue_dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonAdd" />
