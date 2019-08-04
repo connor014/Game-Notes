@@ -5,7 +5,9 @@ using Android.Runtime;
 using Android.Widget;
 using Android.Content;
 
-
+/*
+ * The game notes app takes the information the user inputs and prints it out on the final activity. 
+ */
 namespace Game_Notes
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -18,9 +20,10 @@ namespace Game_Notes
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            // when button "add note" is clicked it takes users to the create note activity.
+            // when the button "add note" is clicked it takes the user to the create note activity.
+            // assigning the button to buttonAddNote variable.
             var buttonAddNote = FindViewById<Button>(Resource.Id.buttonAdd);
-
+            // once clicked the next activity is started.
             buttonAddNote.Click += delegate {
 
                 Intent name = new Intent(this, typeof(addActivity));
