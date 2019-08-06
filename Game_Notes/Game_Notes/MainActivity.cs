@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using Android.Content;
+using AlertDialog = Android.App.AlertDialog;
 
 /*
  * The game notes app takes the information the user inputs and prints it out on the final activity. 
@@ -28,6 +29,22 @@ namespace Game_Notes
 
                 Intent name = new Intent(this, typeof(addActivity));
                 StartActivity(name);
+            };
+
+            // when clicked provides the user with the about prompt explaining the app.
+            // assignes the about button to a variable.
+            var btnAbout = FindViewById<Button>(Resource.Id.buttonAbout);
+
+            // When the about button is clicked the following runs.
+            btnAbout.Click += (sender, e) =>
+            {
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                alert.SetTitle("About");
+                alert.SetMessage("The Game Notes app allows you to create any notes you need, whether its keeping track of pre orders, games lent to friends or games soon to be released, Game Notes is the only note taking app you'll need for everything gaming.");
+                alert.SetPositiveButton("Ok", (senderAlert, args) => {
+                });
+                Dialog dialog = alert.Create();
+                dialog.Show();
             };
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

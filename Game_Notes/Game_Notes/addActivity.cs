@@ -36,9 +36,10 @@ namespace Game_Notes
             // once the viewAllButton is clicked the following runs.
             viewAllButton.Click += (sender, e) =>
             {
+                // check if list is empty.
                 // the note entries that are entered are added to the list noteTitle, the user is then taken to the note activity.
                 var intent = new Intent(this, typeof(Game_Notes.list));
-                intent.PutStringArrayListExtra("student_name", noteTitle);
+                intent.PutStringArrayListExtra("user_note", noteTitle);
                 StartActivity(intent);
             };
 
@@ -46,18 +47,35 @@ namespace Game_Notes
             saveButton.Click += (sender, e) => 
             {
                 // ensures if theres no note and the save button is pressed it isnt saved.
-                string newName = "";
+                string newNote = "";
                 if (string.IsNullOrWhiteSpace(name.Text))
                 {
-                    newName = "";
+                    newNote = "";
                 }
                 // adds the note to the noteTitle list.
                 else
                 {
-                    noteTitle.Add(name.Text);
+                    //set alert for adding the note.
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.SetTitle("Confirm note");
+                    alert.SetMessage("Do you want to add the note: " + name.Text + "?");
+                    alert.SetPositiveButton("Confirm", (senderAlert, args) => {
+                        // adds the note to the list.
+                        noteTitle.Add(name.Text);
+                        Toast.MakeText(this, "Added!", ToastLength.Short).Show();
+                        // clears the edit text
+                        name.Text = "";
+                    });
+
+                    alert.SetNegativeButton("Cancel", (senderAlert, args) => {
+                        // doesn't add the note to the list and clears the edit text.
+                        name.Text = "";
+                        Toast.MakeText(this, "The note wasn't added!", ToastLength.Short).Show();
+                    });
+
+                    Dialog dialog = alert.Create();
+                    dialog.Show();
                 }
-                // empties the text field.
-                name.Text = "";
             };
         }
     }

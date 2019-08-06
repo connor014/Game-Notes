@@ -88,28 +88,31 @@ namespace Game_Notes
 			public const int button1 = 2130903040;
 			
 			// aapt resource value: 0x7F030001
-			public const int buttonAdd = 2130903041;
+			public const int buttonAbout = 2130903041;
 			
 			// aapt resource value: 0x7F030002
-			public const int buttonHome = 2130903042;
+			public const int buttonAdd = 2130903042;
 			
 			// aapt resource value: 0x7F030003
-			public const int buttonSave = 2130903043;
+			public const int buttonHome = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int editTextHeading = 2130903044;
+			public const int buttonSave = 2130903044;
 			
 			// aapt resource value: 0x7F030005
-			public const int imageView1 = 2130903045;
+			public const int editTextHeading = 2130903045;
 			
 			// aapt resource value: 0x7F030006
-			public const int listView1 = 2130903046;
+			public const int imageView1 = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int textViewHeading = 2130903047;
+			public const int listView1 = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int textViewNote = 2130903048;
+			public const int textViewHeading = 2130903048;
+			
+			// aapt resource value: 0x7F030009
+			public const int textViewNote = 2130903049;
 			
 			static Id()
 			{
