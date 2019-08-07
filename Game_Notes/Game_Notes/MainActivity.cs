@@ -31,11 +31,11 @@ namespace Game_Notes
                 StartActivity(name);
             };
 
-            // when clicked provides the user with the about prompt explaining the app.
+            // when the about button is clicked it provides the user with the about prompt explaining the app.
             // assignes the about button to a variable.
             var btnAbout = FindViewById<Button>(Resource.Id.buttonAbout);
 
-            // When the about button is clicked the following runs.
+            // When the about button is clicked the following alert runs.
             btnAbout.Click += (sender, e) =>
             {
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
